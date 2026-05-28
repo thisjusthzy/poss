@@ -1,0 +1,36 @@
+CRITICAL - 2026-05-19 16:16:46 --> Undefined property: stdClass::$username
+#0 C:\xampp\htdocs\poss\poss\app\Views\karyawan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('karyawan', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(205): view('karyawan', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->tk()
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-19 16:17:11 --> Undefined property: stdClass::$username
+#0 C:\xampp\htdocs\poss\poss\app\Views\karyawan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('karyawan', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(205): view('karyawan', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->tk()
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-19 16:27:01 --> Undefined variable $okta
+#0 C:\xampp\htdocs\poss\poss\app\Views\t_karyawan.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('t_karyawan', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(202): view('t_karyawan')
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->tk()
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}

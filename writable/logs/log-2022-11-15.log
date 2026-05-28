@@ -1,0 +1,242 @@
+CRITICAL - 2022-11-15 00:19:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:38:25 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:39:08 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:39:30 --> syntax error, unexpected '`', expecting ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(122): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:39:59 --> syntax error, unexpected ''barangmasuk'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(122): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:43:06 --> syntax error, unexpected '"', expecting ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(122): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-15 00:43:58 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\c_bm.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('c_bm', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(155): view('c_bm')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-15 00:45:08 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\c_bm.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('c_bm', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(155): view('c_bm')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-15 00:46:07 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\c_bm.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('c_bm', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(155): view('c_bm')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-15 00:48:10 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\c_bm.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('c_bm', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(155): view('c_bm')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-15 01:09:20 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-15 01:28:05 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\poss\app\Controllers\Home.php on line 166
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(166): view('c_p', NULL)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-15 01:30:19 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\c_p.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('c_p', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(166): view('c_p')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-11-15 01:31:29 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 01:31:29 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(163): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 01:33:24 --> Unknown column '2022-11-01' in 'where clause'
+CRITICAL - 2022-11-15 01:33:24 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(163): App\Models\M_pj->filter2('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 01:41:10 --> Unknown column 'product.tanggal' in 'where clause'
+CRITICAL - 2022-11-15 01:41:10 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(163): App\Models\M_pj->filter2('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-15 01:45:29 --> Class 'App\Controllers\M_model' not found
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->l_brg()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-15 01:52:39 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\cari_b.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('cari_b', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(163): view('cari_b', Array)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->l_brg()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-11-15 01:55:45 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 01:55:45 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(184): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_b()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 01:56:52 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 01:56:52 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(184): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_b()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 01:59:22 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 01:59:22 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(172): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 02:00:51 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 02:00:51 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(172): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 02:01:08 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 02:01:08 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(172): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-15 02:02:10 --> Not unique table/alias: 'product'
+CRITICAL - 2022-11-15 02:02:10 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(172): App\Models\M_pj->filter('product', '2022-11-01', '2022-11-30')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_p()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

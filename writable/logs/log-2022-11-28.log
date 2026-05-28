@@ -1,0 +1,559 @@
+CRITICAL - 2022-11-28 00:01:07 --> Min/max width is undefined for table rows
+#0 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\TableRow->get_min_max_width()
+#1 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(420): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#2 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(938): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_child_width()
+#3 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(458): Dompdf\FrameReflower\Block->get_min_max_content_width()
+#4 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_width()
+#5 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(420): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#6 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\TableCell.php(143): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_child_width()
+#7 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(458): Dompdf\FrameReflower\TableCell->get_min_max_content_width()
+#8 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_width()
+#9 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Cellmap.php(729): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#10 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Cellmap.php(604): Dompdf\Cellmap->calculate_column_widths()
+#11 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Table.php(460): Dompdf\Cellmap->add_frame(Object(Dompdf\FrameDecorator\Table))
+#12 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Table.php(331): Dompdf\FrameReflower\Table->get_min_max_width()
+#13 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Table->reflow(Object(Dompdf\FrameDecorator\Block))
+#14 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(866): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#15 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#16 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(866): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#17 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(NULL)
+#18 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#19 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#20 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#21 C:\xampp\htdocs\poss\app\Controllers\Home.php(621): Dompdf\Dompdf->render()
+#22 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->pdf_bm()
+#23 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#24 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#25 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#26 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#27 {main}
+CRITICAL - 2022-11-28 00:01:31 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-28 00:02:10 --> Table 'pointofsale.bm' doesn't exist
+CRITICAL - 2022-11-28 00:02:10 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(428): App\Models\M_pj->filter('bm', '2022-11-01', '2022-11-28')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 00:02:44 --> Table 'pointofsale.bm' doesn't exist
+CRITICAL - 2022-11-28 00:02:44 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(428): App\Models\M_pj->filter('bm', '2022-11-01', '2022-11-28')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:10:07 --> syntax error, unexpected '$column' (T_VARIABLE)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:11:42 --> Cannot redeclare App\Controllers\Home::excel_b()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-28 00:12:47 --> syntax error, unexpected '$awal' (T_VARIABLE), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:28:57 --> syntax error, unexpected '$awal' (T_VARIABLE), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:29:00 --> syntax error, unexpected '$awal' (T_VARIABLE), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:30:33 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:31:56 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:32:32 --> syntax error, unexpected '$awal' (T_VARIABLE), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('home/l_masuk')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('home/l_masuk')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:39:38 --> Min/max width is undefined for table rows
+#0 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\TableRow->get_min_max_width()
+#1 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(420): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#2 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(938): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_child_width()
+#3 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(458): Dompdf\FrameReflower\Block->get_min_max_content_width()
+#4 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_width()
+#5 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(420): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#6 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\TableCell.php(143): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_child_width()
+#7 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\AbstractFrameReflower.php(458): Dompdf\FrameReflower\TableCell->get_min_max_content_width()
+#8 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(921): Dompdf\FrameReflower\AbstractFrameReflower->get_min_max_width()
+#9 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Cellmap.php(729): Dompdf\FrameDecorator\AbstractFrameDecorator->get_min_max_width()
+#10 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Cellmap.php(604): Dompdf\Cellmap->calculate_column_widths()
+#11 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Table.php(460): Dompdf\Cellmap->add_frame(Object(Dompdf\FrameDecorator\Table))
+#12 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Table.php(331): Dompdf\FrameReflower\Table->get_min_max_width()
+#13 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Table->reflow(Object(Dompdf\FrameDecorator\Block))
+#14 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(866): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#15 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#16 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Block.php(866): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#17 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(NULL)
+#18 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#19 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#20 C:\xampp\htdocs\poss\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#21 C:\xampp\htdocs\poss\app\Controllers\Home.php(621): Dompdf\Dompdf->render()
+#22 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->pdf_bm()
+#23 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#24 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#25 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#26 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#27 {main}
+CRITICAL - 2022-11-28 00:40:03 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-28 00:40:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.tanggal BETWEEN '2022-11-01' and '2022-11-28'' at line 1
+CRITICAL - 2022-11-28 00:40:04 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(652): App\Models\M_pj->filter4('barangmasuk', '2022-11-01', '2022-11-28')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->excel_bm()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 00:40:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.tanggal BETWEEN '2022-11-01' and '2022-11-28'' at line 1
+CRITICAL - 2022-11-28 00:40:19 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(652): App\Models\M_pj->filter4('barangmasuk', '2022-11-01', '2022-11-28')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->excel_bm()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 00:44:06 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(649): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->excel_bm()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:24 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(649): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->excel_bm()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:48 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(649): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->excel_bm()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:51 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(456): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->l_masuk()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:52 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(319): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->l_brg()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:54 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(456): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->l_masuk()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:44:54 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(92): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->user()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 00:45:23 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(29): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->aksi_login()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 01:15:26 --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\poss\app\Views\menu.php(298): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 298, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('menu', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(72): view('menu')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->dashboard()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-28 01:18:51 --> Too few arguments to function App\Controllers\Home::edit_k(), 0 passed in C:\xampp\htdocs\poss\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-28 01:19:14 --> Too few arguments to function App\Controllers\Home::edit_k(), 0 passed in C:\xampp\htdocs\poss\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-28 01:19:16 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('menu', Array, true)
+#2 C:\xampp\htdocs\poss\app\Controllers\Home.php(72): view('menu')
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->dashboard()
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-11-28 02:12:26 --> Unknown column 'id_karyawan' in 'where clause'
+CRITICAL - 2022-11-28 02:12:26 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(129): App\Models\M_pj->gw('user', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 02:18:12 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(127): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 02:24:05 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(128): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 02:24:38 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(128): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 02:43:46 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_pj')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_pj')
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(128): spl_autoload_call('App\\Models\\M_pj')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-28 02:45:18 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::join() must be of the type string, array given, called in C:\xampp\htdocs\poss\app\Models\M_pj.php on line 34
+#0 C:\xampp\htdocs\poss\app\Models\M_pj.php(34): CodeIgniter\Database\BaseBuilder->join('user', Array)
+#1 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', Array, 'karyawan.id_use...')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-11-28 02:49:58 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:49:58 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 02:52:00 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:52:00 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 02:55:25 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:55:25 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 02:55:27 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:55:27 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 02:58:44 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:58:44 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 02:58:58 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 02:58:58 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:01:26 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:01:26 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:03:26 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:03:26 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:04:28 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:04:28 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:05:15 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:05:15 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:07:35 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:07:35 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:07:51 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:07:51 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:10:31 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:10:31 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:10:33 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:10:33 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:12:42 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:12:42 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(132): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:13:24 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:13:24 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(132): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:14:53 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:14:53 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:16:25 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2022-11-28 03:16:25 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(131): App\Models\M_pj->jo2('karyawan', 'user', 'karyawan.id_use...', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 03:23:38 --> Unknown column 'id_kw' in 'where clause'
+ERROR - 2022-11-28 18:31:41 --> Unknown column 'id_kw' in 'where clause'
+ERROR - 2022-11-28 18:55:06 --> Table 'pointofsale.index' doesn't exist
+ERROR - 2022-11-28 18:55:06 --> Table 'pointofsale.index' doesn't exist
+CRITICAL - 2022-11-28 18:55:06 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(224): App\Models\M_pj->getarray('index', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->aksi_simpank()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 19:01:35 --> Column 'username' cannot be null
+ERROR - 2022-11-28 19:01:35 --> Column 'NAMA' cannot be null
+ERROR - 2022-11-28 19:02:06 --> Column 'username' cannot be null
+ERROR - 2022-11-28 19:02:06 --> Column 'NAMA' cannot be null
+ERROR - 2022-11-28 19:15:53 --> Unknown column 'id_kw' in 'where clause'
+ERROR - 2022-11-28 19:42:25 --> Duplicate entry 'Manager' for key 'user'
+ERROR - 2022-11-28 19:42:25 --> Unknown column 'id_kw' in 'where clause'
+ERROR - 2022-11-28 19:42:47 --> Unknown column 'id_kw' in 'where clause'
+ERROR - 2022-11-28 19:49:39 --> Duplicate entry 'admin2' for key 'user'
+CRITICAL - 2022-11-28 19:57:32 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/dashboard')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/dashboard')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 19:58:09 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/dashboard')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/dashboard')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-28 19:59:43 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/dashboard')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/dashboard')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-28 20:00:35 --> Duplicate entry 'admins' for key 'user'
+ERROR - 2022-11-28 20:01:06 --> Duplicate entry 'admin2' for key 'user'
+ERROR - 2022-11-28 20:02:22 --> Duplicate entry 'admin2' for key 'user'
+ERROR - 2022-11-28 20:03:13 --> Duplicate entry 'Lkasir' for key 'user'
+ERROR - 2022-11-28 20:04:32 --> Duplicate entry 'LeaderK' for key 'user'
+ERROR - 2022-11-28 20:10:08 --> Duplicate entry 'LeaderK' for key 'user'
+ERROR - 2022-11-28 20:13:21 --> Duplicate entry 'LeaderK' for key 'user'

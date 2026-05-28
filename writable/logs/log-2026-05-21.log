@@ -1,0 +1,23 @@
+ERROR - 2026-05-21 06:59:08 --> Column 'id_bill' cannot be null
+ERROR - 2026-05-21 07:01:38 --> Column 'id_bill' cannot be null
+ERROR - 2026-05-21 07:06:59 --> Column 'id_bill' cannot be null
+ERROR - 2026-05-21 07:07:38 --> Column 'id_bill' cannot be null
+CRITICAL - 2026-05-21 07:35:56 --> file_get_contents(C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp82\\htdo...', 452)
+#1 C:\xampp82\htdocs\poss\app\Controllers\Home.php(452): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp82\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->cari_bm()
+#3 C:\xampp82\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp82\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp82\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp82\htdocs\poss\spark_rewrite.php(44): require_once('C:\\xampp82\\htdo...')
+#7 {main}
+ERROR - 2026-05-21 07:44:10 --> Column 'harga' cannot be null
+CRITICAL - 2026-05-21 08:37:04 --> file_get_contents(C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp82\\htdo...', 674)
+#1 C:\xampp82\htdocs\poss\app\Controllers\Home.php(674): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp82\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->pdf_b()
+#3 C:\xampp82\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp82\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp82\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp82\htdocs\poss\spark_rewrite.php(44): require_once('C:\\xampp82\\htdo...')
+#7 {main}

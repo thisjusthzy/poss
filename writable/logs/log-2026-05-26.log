@@ -1,0 +1,24 @@
+CRITICAL - 2026-05-26 07:49:03 --> Undefined property: stdClass::$id_kw
+#0 C:\xampp82\htdocs\poss\app\Views\edit_karyawan.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp82\\htdo...', 27)
+#1 C:\xampp82\htdocs\poss\system\View\View.php(210): include('C:\\xampp82\\htdo...')
+#2 C:\xampp82\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp82\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_karyawan', Array, true)
+#4 C:\xampp82\htdocs\poss\app\Controllers\Home.php(140): view('edit_karyawan', Array)
+#5 C:\xampp82\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('6')
+#6 C:\xampp82\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp82\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp82\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp82\htdocs\poss\spark_rewrite.php(44): require_once('C:\\xampp82\\htdo...')
+#10 {main}
+CRITICAL - 2026-05-26 07:49:04 --> Attempt to read property "id_user" on null
+#0 C:\xampp82\htdocs\poss\app\Views\edit_karyawan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp82\\htdo...', 26)
+#1 C:\xampp82\htdocs\poss\system\View\View.php(210): include('C:\\xampp82\\htdo...')
+#2 C:\xampp82\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp82\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_karyawan', Array, true)
+#4 C:\xampp82\htdocs\poss\app\Controllers\Home.php(140): view('edit_karyawan', Array)
+#5 C:\xampp82\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('images', 'img.jpg')
+#6 C:\xampp82\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp82\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp82\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp82\htdocs\poss\spark_rewrite.php(44): require_once('C:\\xampp82\\htdo...')
+#10 {main}

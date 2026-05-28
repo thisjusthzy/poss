@@ -1,0 +1,185 @@
+CRITICAL - 2022-11-02 00:51:23 --> Invalid file: header.php
+#0 D:\xampp\htdocs\xic\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(9): view('header')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 00:51:35 --> Invalid file: header.php
+#0 D:\xampp\htdocs\xic\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(9): view('header')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 00:53:53 --> Invalid file: menu.php
+#0 D:\xampp\htdocs\xic\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('menu.php')
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('menu', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(10): view('menu')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 00:54:38 --> Invalid file: footer.php
+#0 D:\xampp\htdocs\xic\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footer.php')
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('footer', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(11): view('footer')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 01:46:05 --> syntax error, unexpected '.'
+#0 D:\xampp\htdocs\xic\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(9): view('header')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 01:46:51 --> syntax error, unexpected '.'
+#0 D:\xampp\htdocs\xic\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp\htdocs\xic\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xampp\htdocs\xic\app\Controllers\Home.php(9): view('header')
+#3 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-11-02 02:53:04 --> Call to undefined function App\Controllers\M_pj()
+#0 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-11-02 02:54:17 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-11-02 02:54:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\xampp\htdocs\xic\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\xic\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\xic\app\Models\M_pj.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\xic\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-11-02 02:54:47 --> Error connecting to the database: Unknown database 'sekolahph'
+CRITICAL - 2022-11-02 02:54:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sekolahph'
+#0 D:\xampp\htdocs\xic\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\xic\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\xic\app\Models\M_pj.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\xic\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-11-02 02:54:49 --> Error connecting to the database: Unknown database 'sekolahph'
+CRITICAL - 2022-11-02 02:54:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sekolahph'
+#0 D:\xampp\htdocs\xic\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\xic\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\xic\app\Models\M_pj.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\xic\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-11-02 02:55:05 --> Error connecting to the database: Unknown database 'sekolahph'
+CRITICAL - 2022-11-02 02:55:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sekolahph'
+#0 D:\xampp\htdocs\xic\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\xic\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\xic\app\Models\M_pj.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\xic\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#4 D:\xampp\htdocs\xic\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\xic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\xic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\xic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\xic\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-11-02 23:32:46 --> Error connecting to the database: Unknown database 'sekoahph'
+CRITICAL - 2022-11-02 23:32:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sekoahph'
+#0 C:\xampp\htdocs\poss\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\poss\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\poss\app\Models\M_pj.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\poss\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-11-02 23:33:59 --> Table 'pointofsale.barang' doesn't exist
+CRITICAL - 2022-11-02 23:33:59 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-02 23:35:35 --> Table 'pointofsale.barang' doesn't exist
+CRITICAL - 2022-11-02 23:35:35 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(12): App\Models\M_pj->tampil('barang')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-02 23:46:42 --> syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-02 23:46:54 --> syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-02 23:47:07 --> syntax error, unexpected '}', expecting ';' or '{'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}

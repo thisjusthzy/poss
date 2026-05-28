@@ -1,0 +1,118 @@
+ERROR - 2026-05-20 06:02:01 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2026-05-20 06:02:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\poss\poss\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\poss\poss\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\poss\poss\app\Models\M_pj.php(11): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(18): App\Models\M_pj->tampil('user')
+#4 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-05-20 06:14:38 --> Undefined variable $id2
+#0 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(821): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 821)
+#1 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->ganti_profil('6')
+#2 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2026-05-20 06:14:45 --> Undefined property: stdClass::$id_kw
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_karyawan.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_karyawan', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(140): view('edit_karyawan', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('6')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:14:45 --> Attempt to read property "id_user" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_karyawan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_karyawan', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(140): view('edit_karyawan', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_k('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:15:24 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:16:01 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:22:07 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:22:18 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:22:25 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2026-05-20 06:42:26 --> Attempt to read property "id_product" on null
+#0 C:\xampp\htdocs\poss\poss\app\Views\edit_product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\poss\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\poss\app\Controllers\Home.php(306): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\poss\spark_rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2026-05-20 06:44:13 --> Column 'id_bill' cannot be null

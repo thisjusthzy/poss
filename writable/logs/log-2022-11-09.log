@@ -1,0 +1,327 @@
+CRITICAL - 2022-11-09 00:27:22 --> Too few arguments to function App\Controllers\Home::clear_pm(), 0 passed in C:\xampp\htdocs\poss\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->clear_pm()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-09 00:28:40 --> Too few arguments to function App\Controllers\Home::clear_pm(), 0 passed in C:\xampp\htdocs\poss\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->clear_pm()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-09 00:28:46 --> Too few arguments to function App\Controllers\Home::clear_siswa(), 0 passed in C:\xampp\htdocs\poss\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->clear_siswa()
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-11-09 01:17:51 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/index')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/index')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:02 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/let')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/let')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:04 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/transaksi')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/transaksi')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:06 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/let')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/let')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:09 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/index')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/index')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:09 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/let')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/let')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:18:09 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:18:10 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/Murid')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/Murid')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:23:35 --> Too few arguments to function App\Models\M_pj::edit(), 1 passed in C:\xampp\htdocs\poss\app\Controllers\Home.php on line 121 and exactly 3 expected
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(121): App\Models\M_pj->edit('product')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('1')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:33:04 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/index')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/index')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:33:11 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:33:15 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:33:25 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:33:41 --> syntax error, unexpected '=', expecting '('
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:35:14 --> syntax error, unexpected '=', expecting '('
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:35:17 --> syntax error, unexpected '=', expecting '('
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:35:45 --> syntax error, unexpected '=', expecting '('
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:36:19 --> syntax error, unexpected '=', expecting '('
+#0 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\poss\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\poss\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-09 01:37:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRaw()
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(122): App\Models\M_pj->gw('product', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('1')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 01:39:37 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\edit_product.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(125): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-09 01:41:53 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\poss\app\Views\edit_product.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\poss\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\poss\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\poss\system\Common.php(1089): CodeIgniter\View\View->render('edit_product', Array, true)
+#4 C:\xampp\htdocs\poss\app\Controllers\Home.php(125): view('edit_product', Array)
+#5 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->edit_p('images', 'img.jpg')
+#6 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-11-09 02:01:14 --> Unknown column 'tanggal' in 'where clause'
+CRITICAL - 2022-11-09 02:01:14 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(145): App\Models\M_pj->gw('product', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->aksi_editp()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 02:01:59 --> Too few arguments to function App\Models\M_pj::edit(), 2 passed in C:\xampp\htdocs\poss\app\Controllers\Home.php on line 145 and exactly 3 expected
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(145): App\Models\M_pj->edit('product', Array)
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->aksi_editp()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-09 02:04:03 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:04:27 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:06:01 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:07:38 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:10:58 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:12:30 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:14:30 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:17:51 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:20:15 --> Unknown column 'tanggal' in 'field list'
+CRITICAL - 2022-11-09 02:21:44 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-09 02:22:41 --> Unknown column 'tanggal' in 'field list'
+ERROR - 2022-11-09 02:23:11 --> Unknown column 'tanggal' in 'field list'
+CRITICAL - 2022-11-09 22:20:49 --> Cannot redeclare App\Controllers\Home::edit_p()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-09 22:20:57 --> Cannot redeclare App\Controllers\Home::edit_p()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-09 22:22:03 --> Cannot redeclare App\Controllers\Home::edit_p()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-09 22:22:37 --> Cannot redeclare App\Controllers\Home::edit_p()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-09 22:22:45 --> Cannot redeclare App\Controllers\Home::edit_p()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-09 22:42:28 --> Too few arguments to function App\Models\M_pj::isi(), 1 passed in C:\xampp\htdocs\poss\app\Controllers\Home.php on line 123 and exactly 2 expected
+#0 C:\xampp\htdocs\poss\app\Controllers\Home.php(123): App\Models\M_pj->isi('product')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(832): App\Controllers\Home->ppm()
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 22:51:30 --> syntax error, unexpected ''tanggal'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/ppm')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/ppm')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 22:51:37 --> syntax error, unexpected ''tanggal'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/bm')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/bm')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 22:51:39 --> syntax error, unexpected ''tanggal'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/index')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/index')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-11-09 22:52:02 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/index')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/index')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-11-09 23:03:19 --> Column 'NAMA' cannot be null
+ERROR - 2022-11-09 23:04:03 --> Column 'NAMA' cannot be null
+ERROR - 2022-11-09 23:04:25 --> Column 'NAMA' cannot be null
+ERROR - 2022-11-09 23:22:01 --> Column 'NAMA' cannot be null
+CRITICAL - 2022-11-09 23:49:26 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\poss\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/edit_k/2')
+#1 C:\xampp\htdocs\poss\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Home/edit_k/2')
+#2 C:\xampp\htdocs\poss\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\poss\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\poss\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\poss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
