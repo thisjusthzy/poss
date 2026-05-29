@@ -1,0 +1,581 @@
+/* ===================================
+   POS SYSTEM - CUSTOM THEME
+   Modern POS styling on top of Gentelella
+   =================================== */
+
+/* -- Google Font -- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===================================
+   GLOBAL OVERRIDES
+   =================================== */
+body, html {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Sidebar brand color - deep navy/teal for POS */
+.nav_title {
+  background: #1a2234 !important;
+}
+
+.nav_title a.site_title {
+  color: #4dd9ac !important;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.nav_title a.site_title i {
+  color: #4dd9ac;
+}
+
+/* Sidebar background */
+.left_col {
+  background: #1a2234 !important;
+}
+
+.main_menu_side {
+  background: #1a2234 !important;
+}
+
+/* Sidebar nav items */
+.nav.side-menu > li > a,
+.nav.child_menu > li > a {
+  color: #a8b2c7 !important;
+  font-size: 13px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.nav.side-menu > li > a:hover,
+.nav.child_menu > li > a:hover {
+  color: #ffffff !important;
+  background: rgba(77, 217, 172, 0.12) !important;
+  border-left: 3px solid #4dd9ac;
+  padding-left: 13px;
+}
+
+.nav.side-menu > li.active > a,
+.nav.side-menu > li.current-page > a {
+  color: #4dd9ac !important;
+  background: rgba(77, 217, 172, 0.15) !important;
+  border-left: 3px solid #4dd9ac;
+}
+
+/* Sidebar section heading */
+.menu_section h3 {
+  color: #4dd9ac !important;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 15px 5px;
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  background: #131c2e !important;
+  border-top: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+.sidebar-footer a {
+  color: #a8b2c7 !important;
+  transition: color 0.2s;
+}
+
+.sidebar-footer a:hover {
+  color: #4dd9ac !important;
+}
+
+/* Profile section in sidebar */
+.profile_pic .img-circle {
+  border: 2px solid #4dd9ac;
+  width: 48px;
+  height: 48px;
+}
+
+.profile_info span {
+  color: #6b7a99 !important;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile_info h2 {
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===================================
+   TOP NAV BAR
+   =================================== */
+.top_nav {
+  background: #ffffff !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08) !important;
+  border-bottom: 1px solid #eef0f5 !important;
+}
+
+.top_nav .nav_menu {
+  background: #ffffff !important;
+}
+
+.top_nav .nav-sm .nav > li > a {
+  color: #3d4a60 !important;
+}
+
+.user-profile img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #4dd9ac;
+  margin-right: 6px;
+}
+
+/* ===================================
+   MAIN CONTENT AREA
+   =================================== */
+.right_col {
+  background: #f4f6fb !important;
+}
+
+/* ===================================
+   STAT TILES (top summary cards)
+   =================================== */
+.tile_stats_count {
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 20px 18px !important;
+  margin: 5px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+  border: 1px solid #eef0f5 !important;
+  border-left: 4px solid #4dd9ac !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile_stats_count:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
+}
+
+.tile_stats_count .count_top {
+  color: #6b7a99 !important;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.tile_stats_count .count {
+  color: #1a2234 !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
+}
+
+.tile_stats_count .count_bottom {
+  font-size: 11px;
+  color: #a8b2c7;
+  margin-top: 4px;
+}
+
+.tile_stats_count .count_bottom .green {
+  color: #2ed8a4;
+}
+
+.tile_stats_count .count_bottom .red {
+  color: #f5365c;
+}
+
+/* ===================================
+   X_PANEL (content cards)
+   =================================== */
+.x_panel {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  border: 1px solid #eef0f5 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05) !important;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.x_title {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eef0f5 !important;
+  padding: 14px 20px !important;
+}
+
+.x_title h2 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #1a2234 !important;
+  margin: 0 !important;
+}
+
+.x_title .nav.navbar-right.panel_toolbox {
+  margin-top: -2px;
+}
+
+.x_content {
+  padding: 20px !important;
+}
+
+/* ===================================
+   TABLES
+   =================================== */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 13px;
+  width: 100% !important;
+}
+
+.table thead th {
+  background: #1a2234 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  border: none !important;
+  padding: 12px 14px !important;
+}
+
+.table tbody tr {
+  transition: background 0.15s;
+}
+
+.table tbody tr:hover {
+  background: #f0fbf7 !important;
+}
+
+.table tbody td {
+  vertical-align: middle !important;
+  color: #3d4a60;
+  border-color: #eef0f5 !important;
+  padding: 10px 14px !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9fafc !important;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+.btn {
+  border-radius: 7px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-success {
+  background: #4dd9ac !important;
+  color: #ffffff !important;
+}
+
+.btn-success:hover {
+  background: #3bc99a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(77, 217, 172, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: #2563eb !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.btn-info {
+  background: #06b6d4 !important;
+  color: #ffffff !important;
+}
+
+.btn-info:hover {
+  background: #0891b2 !important;
+  transform: translateY(-1px);
+  color: #ffffff !important;
+}
+
+.btn-danger {
+  background: #f5365c !important;
+  color: #ffffff !important;
+}
+
+.btn-danger:hover {
+  background: #d9214b !important;
+  transform: translateY(-1px);
+  color: #ffffff !important;
+}
+
+.btn-warning {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+.btn-warning:hover {
+  background: #d97706 !important;
+  color: #ffffff !important;
+}
+
+/* Add button (small icon button) */
+.btn.btn-success i.fa-plus,
+.btn.btn-success i {
+  font-size: 12px;
+}
+
+/* ===================================
+   FORMS
+   =================================== */
+.form-control {
+  border-radius: 8px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  padding: 8px 12px !important;
+  font-size: 13px !important;
+  color: #1a2234 !important;
+  background: #f9fafc !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  height: auto !important;
+}
+
+.form-control:focus {
+  border-color: #4dd9ac !important;
+  box-shadow: 0 0 0 3px rgba(77, 217, 172, 0.15) !important;
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+label.control-label {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #3d4a60 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #f5365c !important;
+}
+
+.form-horizontal .form-group {
+  margin-bottom: 16px !important;
+}
+
+.item.form-group {
+  margin-bottom: 16px !important;
+}
+
+/* ===================================
+   BADGES
+   =================================== */
+.badge {
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+  font-size: 10px !important;
+}
+
+/* ===================================
+   DATATABLES overrides
+   =================================== */
+.dataTables_wrapper .dataTables_filter input {
+  border-radius: 8px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  padding: 6px 12px !important;
+  font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border-radius: 8px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  padding: 4px 8px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 6px !important;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: #4dd9ac !important;
+  border-color: #4dd9ac !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #f0fbf7 !important;
+  border-color: #4dd9ac !important;
+  color: #4dd9ac !important;
+}
+
+/* ===================================
+   LOGIN PAGE
+   =================================== */
+.login {
+  background: linear-gradient(135deg, #1a2234 0%, #243046 50%, #1e3a5f 100%) !important;
+}
+
+.login_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login_form {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+
+.login_content {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 40px 36px !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25) !important;
+  border: none !important;
+}
+
+.login_content h1 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #6b7a99 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 24px !important;
+  text-align: center !important;
+}
+
+/* POS branding at bottom of login */
+.login_content .separator h1 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #1a2234 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+.login_content .separator h1 i {
+  color: #4dd9ac;
+}
+
+.login_content form > div {
+  margin-bottom: 14px;
+}
+
+.login_content .form-control {
+  border-radius: 10px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  height: auto !important;
+}
+
+.login_content .form-control:focus {
+  border-color: #4dd9ac !important;
+  box-shadow: 0 0 0 3px rgba(77, 217, 172, 0.15) !important;
+}
+
+.login_content button[type="submit"] {
+  width: 100%;
+  padding: 11px;
+  background: linear-gradient(135deg, #4dd9ac, #3bc99a) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(77, 217, 172, 0.35);
+}
+
+.login_content button[type="submit"]:hover {
+  background: linear-gradient(135deg, #3bc99a, #2eb88a) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(77, 217, 172, 0.45) !important;
+}
+
+.login .separator {
+  border-top: 1px solid #eef0f5;
+  margin-top: 20px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+/* ===================================
+   FILTER / REPORT FORMS
+   =================================== */
+.filter-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border: 1px solid #eef0f5;
+  margin-bottom: 20px;
+}
+
+/* ===================================
+   WELCOME / DASHBOARD STATS
+   =================================== */
+.tile_count {
+  padding: 5px 0 15px;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+footer {
+  background: #ffffff !important;
+  border-top: 1px solid #eef0f5 !important;
+  color: #a8b2c7 !important;
+  font-size: 12px !important;
+  padding: 14px 20px !important;
+}
+
+footer a {
+  color: #4dd9ac !important;
+}
+
+/* ===================================
+   SCROLLBAR (webkit)
+   =================================== */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c9d8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4dd9ac;
+}
+
+/* ===================================
+   RESPONSIVE UTILITY
+   =================================== */
+@media (max-width: 768px) {
+  .tile_stats_count {
+    margin: 4px 0 !important;
+  }
+  .login_content {
+    padding: 28px 20px !important;
+  }
+}

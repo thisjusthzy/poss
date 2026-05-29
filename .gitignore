@@ -1,0 +1,25 @@
+# CodeIgniter 4 .gitignore
+
+# Environment files
+.env
+env
+
+# Composer files
+vendor/
+
+# Writable directories
+writable/*
+!writable/.gitkeep
+!writable/index.html
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+tests/_support/_generated/
