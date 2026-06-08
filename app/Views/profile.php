@@ -1,10 +1,10 @@
 <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
   <div class="x_panel" style="border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.07); border: 1px solid #eef0f5; overflow: hidden; background: #fff; margin-top: 20px;">
     
-    <div style="background: linear-gradient(135deg, #1a2234 0%, #2c3b59 100%); padding: 40px 30px; text-align: center; color: #fff; position: relative;">
+    <div style="background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%); padding: 40px 30px; text-align: center; color: #fff; position: relative;">
       <!-- Profile Header Visual -->
       <div style="width: 100px; height: 100px; border-radius: 50%; background: #e8f5f1; border: 4px solid rgba(255,255,255,0.25); margin: 0 auto 15px auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-        <i class="fa fa-user" style="font-size: 50px; color: #1a2234;"></i>
+        <i class="fa fa-user" style="font-size: 50px; color: #7f1d1d;"></i>
       </div>
       <h3 style="margin: 0; font-weight: 700; font-size: 22px; letter-spacing: 0.5px;"><?= esc($yu->NAMA ?? 'Kasir / Pengguna') ?></h3>
       

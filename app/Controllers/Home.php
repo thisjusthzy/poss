@@ -241,7 +241,11 @@ public function log_out()
     // $evan->edit('user', $user, $where);
     
 
-    return redirect ()->to('Home');
+    if ($id == session()->get('id_user')) {
+        return redirect()->to('Home/log_out');
+    } else {
+        return redirect()->to('Home/karyawan');
+    }
     }else{
             return redirect()->to('Home/login');
         } 
@@ -450,6 +454,8 @@ public function edit_p($pop)
       $awal = $this->request->getPost('awal');
       $akhir = $this->request->getPost('akhir');
       $data['okta']=$evan->filter2('product',$awal,$akhir);
+      $data['awal'] = $awal;
+      $data['akhir'] = $akhir;
       $where=array('tanggal');
         echo view('c_pr',$data); 
         }else{
@@ -548,9 +554,10 @@ public function cari_bm()
       $awal = $this->request->getPost('awal');
       $akhir = $this->request->getPost('akhir');
       $data['okta']=$evan->filter('barangmasuk',$awal,$akhir);
-      $img = file_get_contents(
-            'C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg');
-            $data['foto'] = base64_encode($img);
+      $data['awal'] = $awal;
+      $data['akhir'] = $akhir;
+      $img = @file_get_contents(FCPATH . 'images/cop-sph.jpeg');
+      $data['foto'] = $img ? base64_encode($img) : '';
         echo view('c_bm', $data);
         }else{
         return redirect()->to('/Home/log_out');
@@ -642,10 +649,11 @@ public function transaksi()
       $awal = $this->request->getPost('awal');
       $akhir = $this->request->getPost('akhir');
       $data['okta']=$evan->filter('transaksi',$awal,$akhir);
+      $data['awal'] = $awal;
+      $data['akhir'] = $akhir;
       $where=array('tanggal'); 
-        $img = file_get_contents(
-            'C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg');
-            $data['foto'] = base64_encode($img);
+        $img = @file_get_contents(FCPATH . 'images/cop-sph.jpeg');
+        $data['foto'] = $img ? base64_encode($img) : '';
        echo view('c_p',$data); 
         }else{
             return redirect()->to('Home/log_out');
@@ -814,206 +822,346 @@ public function aksi_simpant()
 
 public function pdf_p()
 {
-     $model=new M_pj();
-        $awal= $this->request->getPost('awal');
-        $akhir= $this->request->getPost('akhir');
-        $kui['okta']=$model->filter('transaksi',$awal,$akhir);
-        $img = file_get_contents(
-            'C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg');
-    
-            $kui['foto'] = base64_encode($img);
-    
-            $dompdf = new \Dompdf\Dompdf();
-            $dompdf->set_option('isRemoteEnabled', TRUE);
-           
-            $dompdf->loadHtml(view('c_p',$kui));
-            $dompdf->setPaper('A4', 'landscape');
-            $dompdf->render();
-            $dompdf->stream('My.pdf',array('Attachment'=>0));
-    }
+    $model = new M_pj();
+    $awal = $this->request->getPost('awal');
+    $akhir = $this->request->getPost('akhir');
+    $kui['okta'] = $model->filter('transaksi', $awal, $akhir);
+    $kui['awal'] = $awal;
+    $kui['akhir'] = $akhir;
+    $img = @file_get_contents(FCPATH . 'images/cop-sph.jpeg');
+    $kui['foto'] = $img ? base64_encode($img) : '';
+
+    $dompdf = new \Dompdf\Dompdf();
+    $dompdf->set_option('isRemoteEnabled', TRUE);
+   
+    $dompdf->loadHtml(view('c_p', $kui));
+    $dompdf->setPaper('A4', 'landscape');
+    $dompdf->render();
+    $dompdf->stream('Laporan_Penjualan.pdf', array('Attachment' => 0));
+}
 
 public function pdf_bm()
 {
-     $model=new M_pj();
-        $awal= $this->request->getPost('awal');
-        $akhir= $this->request->getPost('akhir');
-        $kui['okta']=$model->filter('barangmasuk',$awal,$akhir);
-        $img = file_get_contents(
-            'C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg');
-    
-            $kui['foto'] = base64_encode($img);
-    
-            $dompdf = new \Dompdf\Dompdf();
-            $dompdf->set_option('isRemoteEnabled', TRUE);
-           
-            $dompdf->loadHtml(view('c_bm',$kui));
-            $dompdf->setPaper('A4', 'landscape');
-            $dompdf->render();
-            $dompdf->stream('My.pdf',array('Attachment'=>0));
-    }
+    $model = new M_pj();
+    $awal = $this->request->getPost('awal');
+    $akhir = $this->request->getPost('akhir');
+    $kui['okta'] = $model->filter('barangmasuk', $awal, $akhir);
+    $kui['awal'] = $awal;
+    $kui['akhir'] = $akhir;
+    $img = @file_get_contents(FCPATH . 'images/cop-sph.jpeg');
+    $kui['foto'] = $img ? base64_encode($img) : '';
+
+    $dompdf = new \Dompdf\Dompdf();
+    $dompdf->set_option('isRemoteEnabled', TRUE);
+   
+    $dompdf->loadHtml(view('c_bm', $kui));
+    $dompdf->setPaper('A4', 'landscape');
+    $dompdf->render();
+    $dompdf->stream('Laporan_Barang_Masuk.pdf', array('Attachment' => 0));
+}
 
 public function pdf_b()
 {
-    $model=new M_pj();
-        $awal= $this->request->getPost('awal');
-        $akhir= $this->request->getPost('akhir');
-        $kui['okta']=$model->filter2('product',$awal,$akhir);
-        $img = file_get_contents(
-            'C:\xampp\htdocs\poss\poss\public\images\cop-sph.jpeg');
-    
-            $kui['foto'] = base64_encode($img);
-    
-            $dompdf = new \Dompdf\Dompdf();
-            $dompdf->set_option('isRemoteEnabled', TRUE);
-           
-            $dompdf->loadHtml(view('c_pr',$kui));
-            $dompdf->setPaper('A4', 'landscape');
-            $dompdf->render();
-            $dompdf->stream('My.pdf',array('Attachment'=>0));
+    $model = new M_pj();
+    $awal = $this->request->getPost('awal');
+    $akhir = $this->request->getPost('akhir');
+    $kui['okta'] = $model->filter2('product', $awal, $akhir);
+    $kui['awal'] = $awal;
+    $kui['akhir'] = $akhir;
+    $img = @file_get_contents(FCPATH . 'images/cop-sph.jpeg');
+    $kui['foto'] = $img ? base64_encode($img) : '';
 
+    $dompdf = new \Dompdf\Dompdf();
+    $dompdf->set_option('isRemoteEnabled', TRUE);
+   
+    $dompdf->loadHtml(view('c_pr', $kui));
+    $dompdf->setPaper('A4', 'landscape');
+    $dompdf->render();
+    $dompdf->stream('Laporan_Barang.pdf', array('Attachment' => 0));
 }
 
-  public function excel_bm()
-    {
-        if (session()->get('level')==1 || session()->get('level')==4) {
+public function excel_bm()
+{
+    if (session()->get('level') == 1 || session()->get('level') == 4) {
         $model = new M_pj();
         $awal = $this->request->getPost('awal');
         $akhir = $this->request->getPost('akhir');
         $data = $model->filter4('barangmasuk', $awal, $akhir);
-        // echo view('excel_print_pg', $data);
 
         $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        $sheet->setShowGridlines(true);
 
-        $spreadsheet->setActiveSheetIndex(0)
-            ->setCellValue('A1', 'Nama Barang')
-            ->setCellValue('B1', 'Jumlah Masuk')
-            ->setCellValue('C1', 'Harga')
-            ->setCellValue('D1', 'Tanggal');
+        // Headers
+        $headers = ['Nama Barang', 'Jumlah Masuk', 'Harga Beli', 'Nama Supplier', 'Tanggal'];
+        foreach ($headers as $index => $header) {
+            $col = chr(65 + $index);
+            $sheet->setCellValue($col . '1', $header);
+        }
+
+        $sheet->getStyle('A1:E1')->applyFromArray([
+            'font' => ['bold' => true, 'color' => ['rgb' => 'FFFFFF']],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => '7F1D1D']
+            ],
+            'alignment' => [
+                'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+                'vertical' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER
+            ]
+        ]);
 
         $column = 2;
+        $totalQty = 0;
+        $totalPrice = 0;
 
         foreach ($data as $dat) {
-            $spreadsheet->setActiveSheetIndex(0)
-                ->setCellValue('A' . $column, $dat->nama_product)
-                ->setCellValue('B' . $column, $dat->jumlah_productmasuk)
-                ->setCellValue('C' . $column, $dat->harga)
-                ->setCellValue('D' . $column, $dat->tanggal);
+            $sheet->setCellValue('A' . $column, $dat->nama_product);
+            $sheet->setCellValue('B' . $column, $dat->jumlah_productmasuk);
+            $sheet->setCellValue('C' . $column, $dat->harga);
+            $sheet->setCellValue('D' . $column, $dat->nama_supplier);
+            $sheet->setCellValue('E' . $column, date('d-m-Y', strtotime($dat->tanggal)));
+
+            // Formats & alignments
+            $sheet->getStyle('B' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+            $sheet->getStyle('C' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('E' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+
+            $totalQty += $dat->jumlah_productmasuk;
+            $totalPrice += $dat->harga * $dat->jumlah_productmasuk;
             $column++;
         }
-        // TULIS DALAM BENTUK Format .xlsx
+
+        // Total row
+        $sheet->setCellValue('A' . $column, 'Total');
+        $sheet->setCellValue('B' . $column, $totalQty);
+        $sheet->setCellValue('C' . $column, $totalPrice);
+        
+        $sheet->getStyle('A' . $column . ':E' . $column)->applyFromArray([
+            'font' => ['bold' => true],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => 'F4F6FB']
+            ],
+            'borders' => [
+                'top' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN],
+                'bottom' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE]
+            ]
+        ]);
+
+        $sheet->getStyle('B' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('C' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+
+        // Borders for data
+        $sheet->getStyle('A1:E' . $column)->getBorders()->getAllBorders()->setBorderStyle(\PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN)->setColor(new \PhpOffice\PhpSpreadsheet\Style\Color('DDDDDD'));
+
+        // Auto-size columns
+        foreach (range('A', 'E') as $col) {
+            $sheet->getColumnDimension($col)->setAutoSize(true);
+        }
+
         $fileName = 'Data Laporan Barang masuk';
 
-        //  Coba Redirect hasilnya xlsx ke web client
         header('Content-type:vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition:attachment;filename=' . $fileName . '.xlsx');
         header('Cache-Control: max-age=0');
 
-        $writer = new XLsx($spreadsheet);
+        $writer = new Xlsx($spreadsheet);
         $writer->save('php://output');
-        }else{
-       return redirect()->to('/Home/dashboard'); 
-}
+    } else {
+        return redirect()->to('/Home/dashboard'); 
     }
+}
 
-
-       public function excel_b()
-    {
-        if (session()->get('level')==1 || session()->get('level')==4) {
+public function excel_b()
+{
+    if (session()->get('level') == 1 || session()->get('level') == 4) {
         $model = new M_pj();
         $awal = $this->request->getPost('awal');
         $akhir = $this->request->getPost('akhir');
         $data = $model->filter3('product', $awal, $akhir);
-        // echo view('excel_print_pg', $data);
 
         $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        $sheet->setShowGridlines(true);
 
-        $spreadsheet->setActiveSheetIndex(0)
-            ->setCellValue('A1', 'Nama Barang')
-            ->setCellValue('B1', 'Kode Barang')
-            ->setCellValue('C1', 'Harga')
-            ->setCellValue('D1', 'Stok')
-            ->setCellValue('E1', 'Tanggal');
+        // Headers
+        $headers = ['Nama Barang', 'Kode Barang', 'Harga Beli', 'Harga Jual', 'Stok', 'Tanggal'];
+        foreach ($headers as $index => $header) {
+            $col = chr(65 + $index);
+            $sheet->setCellValue($col . '1', $header);
+        }
+
+        $sheet->getStyle('A1:F1')->applyFromArray([
+            'font' => ['bold' => true, 'color' => ['rgb' => 'FFFFFF']],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => '7F1D1D']
+            ],
+            'alignment' => [
+                'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+                'vertical' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER
+            ]
+        ]);
 
         $column = 2;
+        $totalStok = 0;
 
         foreach ($data as $dat) {
-            $spreadsheet->setActiveSheetIndex(0)
-                ->setCellValue('A' . $column, $dat->nama_product)
-                ->setCellValue('B' . $column, $dat->kode_product)
-                ->setCellValue('C' . $column, $dat->harga_product)
-                ->setCellValue('D' . $column, $dat->stok_product)
-                ->setCellValue('E' . $column, $dat->tanggal);
+            $sheet->setCellValue('A' . $column, $dat->nama_product);
+            $sheet->setCellValue('B' . $column, $dat->kode_product);
+            $sheet->setCellValue('C' . $column, $dat->harga_beli ?? 0);
+            $sheet->setCellValue('D' . $column, $dat->harga_product);
+            $sheet->setCellValue('E' . $column, $dat->stok_product);
+            $sheet->setCellValue('F' . $column, date('d-m-Y', strtotime($dat->tanggal)));
+
+            // Formats & alignments
+            $sheet->getStyle('B' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+            $sheet->getStyle('C' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('D' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('E' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+            $sheet->getStyle('F' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+
+            $totalStok += $dat->stok_product;
             $column++;
         }
-        // TULIS DALAM BENTUK Format .xlsx
+
+        // Total row
+        $sheet->setCellValue('A' . $column, 'Total Stok');
+        $sheet->setCellValue('E' . $column, $totalStok);
+        
+        $sheet->getStyle('A' . $column . ':F' . $column)->applyFromArray([
+            'font' => ['bold' => true],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => 'F4F6FB']
+            ],
+            'borders' => [
+                'top' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN],
+                'bottom' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE]
+            ]
+        ]);
+
+        $sheet->getStyle('E' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+
+        // Borders for data
+        $sheet->getStyle('A1:F' . $column)->getBorders()->getAllBorders()->setBorderStyle(\PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN)->setColor(new \PhpOffice\PhpSpreadsheet\Style\Color('DDDDDD'));
+
+        // Auto-size columns
+        foreach (range('A', 'F') as $col) {
+            $sheet->getColumnDimension($col)->setAutoSize(true);
+        }
+
         $fileName = 'Data Laporan Barang';
 
-        //  Coba Redirect hasilnya xlsx ke web client
         header('Content-type:vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition:attachment;filename=' . $fileName . '.xlsx');
         header('Cache-Control: max-age=0');
 
-        $writer = new XLsx($spreadsheet);
+        $writer = new Xlsx($spreadsheet);
         $writer->save('php://output');
-        }else{
-       return redirect()->to('/Home/dashboard'); 
-}
+    } else {
+        return redirect()->to('/Home/dashboard'); 
     }
+}
 
-       public function excel_p()
-    {
-        if (session()->get('level')==1 || session()->get('level')==4) {
+public function excel_p()
+{
+    if (session()->get('level') == 1 || session()->get('level') == 4) {
         $model = new M_pj();
         $awal = $this->request->getPost('awal');
         $akhir = $this->request->getPost('akhir');
         $data = $model->filter4('transaksi', $awal, $akhir);
-        // echo view('excel_print_pg', $data);
 
         $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        $sheet->setShowGridlines(true);
 
-        $spreadsheet->setActiveSheetIndex(0)
-            ->setCellValue('A1', 'Nama Barang')
-            ->setCellValue('B1', 'Jumlah Barang')
-            ->setCellValue('C1', 'Harga Jual')
-            ->setCellValue('D1', 'Harga Beli')
-            ->setCellValue('E1', 'Keuntungan')
-            ->setCellValue('F1', 'Tanggal');
+        // Headers
+        $headers = ['Nama Barang', 'Jumlah Barang', 'Harga Jual', 'Harga Beli', 'Keuntungan', 'Tanggal'];
+        foreach ($headers as $index => $header) {
+            $col = chr(65 + $index);
+            $sheet->setCellValue($col . '1', $header);
+        }
+
+        $sheet->getStyle('A1:F1')->applyFromArray([
+            'font' => ['bold' => true, 'color' => ['rgb' => 'FFFFFF']],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => '7F1D1D']
+            ],
+            'alignment' => [
+                'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+                'vertical' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER
+            ]
+        ]);
 
         $column = 2;
+        $totalQty = 0;
         $totalProfit = 0;
 
         foreach ($data as $dat) {
             $profit = ($dat->harga - $dat->harga_beli) * $dat->jumlah;
             $totalProfit += $profit;
-            $spreadsheet->setActiveSheetIndex(0)
-                ->setCellValue('A' . $column, $dat->nama_product)
-                ->setCellValue('B' . $column, $dat->jumlah)
-                ->setCellValue('C' . $column, $dat->harga)
-                ->setCellValue('D' . $column, $dat->harga_beli)
-                ->setCellValue('E' . $column, $profit)
-                ->setCellValue('F' . $column, $dat->tanggal);
+            $totalQty += $dat->jumlah;
+
+            $sheet->setCellValue('A' . $column, $dat->nama_product);
+            $sheet->setCellValue('B' . $column, $dat->jumlah);
+            $sheet->setCellValue('C' . $column, $dat->harga);
+            $sheet->setCellValue('D' . $column, $dat->harga_beli);
+            $sheet->setCellValue('E' . $column, $profit);
+            $sheet->setCellValue('F' . $column, date('d-m-Y', strtotime($dat->tanggal)));
+
+            // Formats & alignments
+            $sheet->getStyle('B' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+            $sheet->getStyle('C' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('D' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('E' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+            $sheet->getStyle('F' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+
             $column++;
         }
-        
-        // Add a grand total profit row at the bottom
-        $spreadsheet->setActiveSheetIndex(0)
-            ->setCellValue('A' . $column, 'GRAND TOTAL')
-            ->setCellValue('E' . $column, $totalProfit);
 
-        // TULIS DALAM BENTUK Format .xlsx
+        // Total row
+        $sheet->setCellValue('A' . $column, 'Grand Total');
+        $sheet->setCellValue('B' . $column, $totalQty);
+        $sheet->setCellValue('E' . $column, $totalProfit);
+        
+        $sheet->getStyle('A' . $column . ':F' . $column)->applyFromArray([
+            'font' => ['bold' => true],
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => 'F4F6FB']
+            ],
+            'borders' => [
+                'top' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN],
+                'bottom' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE]
+            ]
+        ]);
+
+        $sheet->getStyle('B' . $column)->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('E' . $column)->getNumberFormat()->setFormatCode('"Rp"#,##0');
+
+        // Borders for data
+        $sheet->getStyle('A1:F' . $column)->getBorders()->getAllBorders()->setBorderStyle(\PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN)->setColor(new \PhpOffice\PhpSpreadsheet\Style\Color('DDDDDD'));
+
+        // Auto-size columns
+        foreach (range('A', 'F') as $col) {
+            $sheet->getColumnDimension($col)->setAutoSize(true);
+        }
+
         $fileName = 'Data Laporan Penjualan';
 
-        //  Coba Redirect hasilnya xlsx ke web client
         header('Content-type:vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition:attachment;filename=' . $fileName . '.xlsx');
         header('Cache-Control: max-age=0');
 
-        $writer = new XLsx($spreadsheet);
+        $writer = new Xlsx($spreadsheet);
         $writer->save('php://output');
-        }else{
-       return redirect()->to('/Home/dashboard'); 
-}
+    } else {
+        return redirect()->to('/Home/dashboard'); 
     }
+}
 
     public function profile()
     {

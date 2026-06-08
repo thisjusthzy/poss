@@ -26,7 +26,7 @@
         body.pos-login-page {
             margin: 0;
             min-height: 100vh;
-            background: linear-gradient(135deg, #f4f7f6 0%, #eef2f1 100%);
+            background: #ffffff !important;
             font-family: "Segoe UI", Arial, sans-serif;
             display: flex;
             align-items: center;
@@ -45,14 +45,18 @@
             background: #ffffff;
             border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+            box-shadow:
+                0 2px 4px rgba(127, 29, 29, 0.04),
+                0 8px 24px rgba(127, 29, 29, 0.10),
+                0 24px 64px rgba(127, 29, 29, 0.14),
+                0 48px 100px rgba(0, 0, 0, 0.08);
             min-height: 620px;
-            border: 1px solid #e5e7eb;
+            border: 1px solid rgba(127, 29, 29, 0.08);
         }
 
         .pos-login-left {
             position: relative;
-            background: linear-gradient(160deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+            background: linear-gradient(160deg, #7f1d1d 0%, #991b1b 45%, #b91c1c 100%);
             color: #ffffff;
             padding: 42px 34px;
             display: flex;
@@ -66,7 +70,7 @@
             position: absolute;
             width: 260px;
             height: 260px;
-            background: rgba(16, 185, 129, 0.14);
+            background: rgba(239, 68, 68, 0.14);
             border-radius: 50%;
             top: -80px;
             right: -80px;
@@ -77,7 +81,7 @@
             position: absolute;
             width: 220px;
             height: 220px;
-            background: rgba(52, 211, 153, 0.08);
+            background: rgba(239, 68, 68, 0.08);
             border-radius: 50%;
             bottom: -70px;
             left: -70px;
@@ -100,11 +104,11 @@
             width: 54px;
             height: 54px;
             border-radius: 16px;
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: linear-gradient(135deg, #ef4444, #dc2626);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 22px rgba(16, 185, 129, 0.28);
+            box-shadow: 0 10px 22px rgba(239, 68, 68, 0.28);
             flex-shrink: 0;
         }
 
@@ -162,8 +166,8 @@
             width: 32px;
             height: 32px;
             border-radius: 10px;
-            background: rgba(16, 185, 129, 0.18);
-            color: #34d399;
+            background: rgba(239, 68, 68, 0.18);
+            color: #fca5a5;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -172,7 +176,7 @@
 
         .pos-left-bottom {
             font-size: 12px;
-            color: #94a3b8;
+            color: #ffffff;
         }
 
         .pos-login-right {
@@ -191,8 +195,8 @@
         .pos-badge {
             display: inline-block;
             padding: 8px 14px;
-            background: #ecfdf5;
-            color: #047857;
+            background: #fff5f5;
+            color: #b91c1c;
             font-size: 12px;
             font-weight: 700;
             border-radius: 999px;
@@ -277,9 +281,9 @@
 
         .pos-input:focus {
             outline: none;
-            border-color: #10b981;
+            border-color: #ef4444;
             background: #ffffff;
-            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.12);
+            box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12);
         }
 
         .pos-row {
@@ -304,13 +308,13 @@
         .pos-remember input[type="checkbox"] {
             width: 16px;
             height: 16px;
-            accent-color: #10b981;
+            accent-color: #ef4444;
             cursor: pointer;
         }
 
         .pos-forgot {
             font-size: 13px;
-            color: #059669;
+            color: #dc2626;
             text-decoration: none;
             font-weight: 600;
         }
@@ -325,18 +329,18 @@
             height: 54px;
             border: none;
             border-radius: 14px;
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: linear-gradient(135deg, #ef4444, #dc2626);
             color: #ffffff;
             font-size: 18px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.25s ease;
-            box-shadow: 0 14px 26px rgba(16, 185, 129, 0.22);
+            box-shadow: 0 14px 26px rgba(239, 68, 68, 0.22);
         }
 
         .pos-btn-login:hover {
             transform: translateY(-1px);
-            box-shadow: 0 18px 30px rgba(16, 185, 129, 0.28);
+            box-shadow: 0 18px 30px rgba(239, 68, 68, 0.28);
         }
 
         .pos-btn-login i {

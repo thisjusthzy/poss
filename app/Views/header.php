@@ -30,6 +30,24 @@
     <!-- POS Custom Style -->
     <link href="<?= base_url('css/pos-custom.css')?>" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Sidebar color override (must be last to beat Gentelella + mCustomScrollbar) -->
+    <style>
+      body { background: #7f1d1d !important; }
+      .col-md-3.left_col,
+      .left_col,
+      .left_col.scroll-view,
+      .left_col .mCustomScrollBox,
+      .left_col .mCSB_container,
+      .left_col .mCSB_draggerContainer,
+      .left_col .mCSB_scrollTools,
+      .nav_title,
+      .main_menu_side,
+      #sidebar-menu { background: #7f1d1d !important; }
+      .right_col,
+      .top_nav,
+      .top_nav .nav_menu { background: #f4f6fb !important; }
+      .top_nav { background: #ffffff !important; }
+    </style>
   </head>
 
   <body class="nav-md">

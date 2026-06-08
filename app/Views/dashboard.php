@@ -24,14 +24,14 @@ $barang_masuk_terbaru   = $barang_masuk_terbaru ?? [];
 
 /* ── Header banner ── */
 .db-header {
-    background: linear-gradient(135deg, #0f4c35 0%, #1a7a52 60%, #22c55e 100%);
+    background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 60%, #ef4444 100%);
     border-radius: 14px;
     padding: 18px 24px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 6px 20px rgba(15,76,53,.20);
+    box-shadow: 0 6px 20px rgba(127,29,29,.20);
     position: relative;
     overflow: hidden;
 }
@@ -186,10 +186,10 @@ $barang_masuk_terbaru   = $barang_masuk_terbaru ?? [];
 
 .db-action:hover {
     text-decoration: none;
-    color: #16a34a;
-    border-color: #16a34a;
+    color: #dc2626;
+    border-color: #dc2626;
     transform: translateX(3px);
-    box-shadow: 0 4px 18px rgba(22,163,74,.12);
+    box-shadow: 0 4px 18px rgba(220,38,38,.12);
 }
 
 .db-action-ic {
@@ -229,22 +229,22 @@ $barang_masuk_terbaru   = $barang_masuk_terbaru ?? [];
     gap: 8px;
 }
 
-.db-panel-head h4 i { color: #16a34a; }
+.db-panel-head h4 i { color: #dc2626; }
 
 .db-panel-link {
     font-size: 13px;
     font-weight: 600;
-    color: #16a34a;
+    color: #dc2626;
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 8px;
-    border: 1px solid #d1fae5;
-    background: #f0fdf4;
+    border: 1px solid #fecaca;
+    background: #fff5f5;
     transition: .15s;
 }
 
 .db-panel-link:hover {
-    background: #16a34a;
+    background: #dc2626;
     color: #fff;
     text-decoration: none;
 }
@@ -272,7 +272,7 @@ $barang_masuk_terbaru   = $barang_masuk_terbaru ?? [];
 }
 
 .db-table tbody tr:last-child td { border-bottom: none; }
-.db-table tbody tr:hover td { background: #f9fffe; }
+.db-table tbody tr:hover td { background: #fff5f5; }
 
 .db-badge {
     display: inline-block;
@@ -468,7 +468,7 @@ $barang_masuk_terbaru   = $barang_masuk_terbaru ?? [];
                     </div>
                 <?php else : ?>
                     <div class="db-empty">
-                        <i class="fa fa-check-circle" style="color:#16a34a; opacity:1;"></i>
+                        <i class="fa fa-check-circle" style="color:#dc2626; opacity:1;"></i>
                         Semua produk memiliki stok yang cukup.
                     </div>
                 <?php endif; ?>

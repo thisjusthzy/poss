@@ -5,7 +5,7 @@
         <footer>
           <div class="pull-right" style="font-size:12px;color:#a8b2c7;">
             <i class="fa fa-shopping-cart" style="color:#4dd9ac;margin-right:4px;"></i>
-            <strong style="color:#1a2234;">POS System</strong> &mdash; Sistem Informasi Kasir
+            <strong style="color:#7f1d1d;">POS System</strong> &mdash; Sistem Informasi Kasir
           </div>
           <div class="clearfix"></div>
         </footer>
@@ -70,6 +70,38 @@
 
     <!-- Custom Theme Scripts -->
     <script src="<?= base_url('../build/js/custom.min.js')?>"></script>
+
+    <!-- Force sidebar red after all JS (including mCustomScrollbar) has run -->
+    <script>
+      (function() {
+        var RED = '#7f1d1d';
+        var selectors = [
+          '.col-md-3.left_col', '.left_col', '.left_col.scroll-view',
+          '.left_col .mCustomScrollBox', '.left_col .mCSB_container',
+          '.left_col .mCSB_draggerContainer', '.left_col .mCSB_scrollTools',
+          '.main_menu_side', '#sidebar-menu', '.nav_title'
+        ];
+        function paintSidebar() {
+          selectors.forEach(function(sel) {
+            document.querySelectorAll(sel).forEach(function(el) {
+              el.style.setProperty('background', RED, 'important');
+              el.style.setProperty('background-color', RED, 'important');
+            });
+          });
+        }
+        // Run immediately
+        paintSidebar();
+        // Run after DOM settles (mCustomScrollbar adds elements after init)
+        setTimeout(paintSidebar, 100);
+        setTimeout(paintSidebar, 500);
+        // Watch for dynamically added scrollbar elements
+        var observer = new MutationObserver(paintSidebar);
+        var leftCol = document.querySelector('.left_col');
+        if (leftCol) {
+          observer.observe(leftCol, { childList: true, subtree: true });
+        }
+      })();
+    </script>
 	
   </body>
 </html>

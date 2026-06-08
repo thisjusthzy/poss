@@ -1,53 +1,201 @@
-<div align="center">
-<img src="<?= FCPATH . 'images/cop-sph.jpeg' ?>" width="80%" height="25%">
-<table width="90%" border="1" id="datatable-buttons" class="table table-striped table-bordered" style="margin: 20px auto; text-align: center; border-collapse: collapse;">
-        <thead>
-          <tr style="background: #f4f6fb;">
-            <th>No</th>
-            <th>Nama Barang</th>
-            <th>Kode Produk</th>
-            <th>Jumlah</th>
-            <th>Harga Beli</th>
-            <th>Harga Jual</th>
-            <th>Keuntungan</th>
-          </tr>
-        </thead>
+<?php
+if (!function_exists('format_indo')) {
+    function format_indo($date) {
+        if (!$date) return '-';
+        $months = [
+            1 => 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+            'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+        ];
+        $timestamp = strtotime($date);
+        $d = date('d', $timestamp);
+        $m = $months[(int)date('m', $timestamp)];
+        $y = date('Y', $timestamp);
+        return "$d $m $y";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Laporan Penjualan</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.4;
+    }
+    .header-container {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .header-image {
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    .title-section {
+      text-align: center;
+      margin-bottom: 20px;
+      border-top: 2px solid #1a2234;
+      padding-top: 15px;
+    }
+    .title-section h2 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+      color: #1a2234;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .title-section p {
+      margin: 0;
+      font-size: 11px;
+      color: #555;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .data-table th {
+      background-color: #1a2234;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 8px 6px;
+      font-size: 10px;
+      text-transform: uppercase;
+      border: 1px solid #1a2234;
+    }
+    .data-table td {
+      padding: 7px 6px;
+      border: 1px solid #e2e8f0;
+      font-size: 10px;
+    }
+    .data-table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-left {
+      text-align: left;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .font-bold {
+      font-weight: bold;
+    }
+    .total-row {
+      background-color: #f1f5f9 !important;
+      font-weight: bold;
+    }
+    .total-row td {
+      border-top: 1.5px solid #1a2234;
+      border-bottom: 2px double #1a2234;
+      font-weight: bold;
+    }
+    .profit-text {
+      color: #10b981;
+      font-weight: bold;
+    }
+    .signature-container {
+      margin-top: 35px;
+      width: 100%;
+      page-break-inside: avoid;
+    }
+    .signature-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: none;
+    }
+    .signature-table td {
+      border: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
 
-        <tbody>
-          <?php
-          $no = 1;
-          $total_jumlah = 0;
-          $total_keuntungan = 0;
-          foreach ($okta as $gas){
-              $harga_beli = $gas->harga_beli ?? 0;
-              $harga_jual = $gas->harga;
-              $jumlah = $gas->jumlah;
-              $profit = ($harga_jual - $harga_beli) * $jumlah;
-              
-              $total_jumlah += $jumlah;
-              $total_keuntungan += $profit;
-          ?>
-            <tr>
-              <th><?php echo $no++ ?></th>
-              <td style="text-align: left; padding-left: 8px;"><?php echo esc($gas->nama_product) ?></td>
-              <td><?php echo esc($gas->kode_product) ?></td>
-              <td><?php echo $jumlah ?></td>
-              <td style="text-align: right; padding-right: 8px;">Rp <?php echo number_format($harga_beli, 0, ',', '.') ?></td>
-              <td style="text-align: right; padding-right: 8px;">Rp <?php echo number_format($harga_jual, 0, ',', '.') ?></td>
-              <td style="text-align: right; padding-right: 8px; font-weight: 600; color: #2eb88a;">Rp <?php echo number_format($profit, 0, ',', '.') ?></td>
-            </tr>
-          <?php } ?>
-        </tbody>
-        <tfoot>
-          <tr style="font-weight: bold; background: #f4f6fb;">
-            <td colspan="3" style="text-align: right; padding-right: 8px;">Grand Total:</td>
-            <td><?php echo $total_jumlah ?></td>
-            <td colspan="2"></td>
-            <td style="text-align: right; padding-right: 8px; color: #2eb88a;">Rp <?php echo number_format($total_keuntungan, 0, ',', '.') ?></td>
-          </tr>
-        </tfoot>
-      </table>
-</div>
-      <script>
-        window.print();
-      </script>
+  <div class="title-section">
+    <h2>Laporan Penjualan Barang</h2>
+    <p>Periode Laporan: <?= format_indo($awal) ?> s/d <?= format_indo($akhir) ?></p>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 5%;">No</th>
+        <th class="text-left" style="width: 32%;">Nama Barang</th>
+        <th style="width: 15%;">Kode Produk</th>
+        <th style="width: 10%;">Jumlah</th>
+        <th class="text-right" style="width: 12%;">Harga Beli</th>
+        <th class="text-right" style="width: 12%;">Harga Jual</th>
+        <th class="text-right" style="width: 14%;">Keuntungan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $no = 1;
+      $total_jumlah = 0;
+      $total_keuntungan = 0;
+      foreach ($okta as $gas) {
+          $harga_beli = $gas->harga_beli ?? 0;
+          $harga_jual = $gas->harga;
+          $jumlah = $gas->jumlah;
+          $profit = ($harga_jual - $harga_beli) * $jumlah;
+          
+          $total_jumlah += $jumlah;
+          $total_keuntungan += $profit;
+      ?>
+        <tr>
+          <td class="text-center"><?= $no++ ?></td>
+          <td class="text-left"><?= esc($gas->nama_product) ?></td>
+          <td class="text-center"><?= esc($gas->kode_product) ?></td>
+          <td class="text-center"><?= $jumlah ?></td>
+          <td class="text-right">Rp <?= number_format($harga_beli, 0, ',', '.') ?></td>
+          <td class="text-right">Rp <?= number_format($harga_jual, 0, ',', '.') ?></td>
+          <td class="text-right profit-text">Rp <?= number_format($profit, 0, ',', '.') ?></td>
+        </tr>
+      <?php } ?>
+    </tbody>
+    <tfoot>
+      <tr class="total-row">
+        <td colspan="3" class="text-right">Grand Total:</td>
+        <td class="text-center"><?= $total_jumlah ?></td>
+        <td colspan="2"></td>
+        <td class="text-right profit-text">Rp <?= number_format($total_keuntungan, 0, ',', '.') ?></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="signature-container">
+    <table class="signature-table">
+      <tr>
+        <td style="width: 65%;"></td>
+        <td style="width: 35%; text-align: center;">
+          <p style="margin: 0 0 50px 0; font-size: 11px;">Batam, <?= format_indo(date('Y-m-d')) ?><br>Mengetahui,</p>
+          <p style="text-decoration: underline; font-weight: bold; margin: 0 0 2px 0; font-size: 11px;"><?= esc(session()->get('username') ?? 'Kasir') ?></p>
+          <p style="margin: 0; font-size: 9px; color: #777; text-transform: uppercase; letter-spacing: 0.5px;">Petugas Kasir / Admin</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    // Fallback print for direct browser rendering
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                // before print
+            }
+        });
+    }
+  </script>
+</body>
+</html>

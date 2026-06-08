@@ -9,13 +9,13 @@
                   $level=session()->get('level');
                   if ($level==1 || $level ==4 ) {
                   ?>
-  <li><a href="<?= base_url ('Home/user') ?>"><i class="fa fa-user"></i>User </a> </li> 
+  <li><a href="<?= base_url ('Home/User') ?>"><i class="fa fa-user"></i>User </a> </li> 
                   <?php }?>  
                   <?php
                   $level=session()->get('level');
                   if ($level==1 || $level ==4 ) {
                   ?>
-  <li><a href="<?= base_url ('Home/karyawan') ?>"><i class="fa fa-windows"></i> Karyawan </a></li>
+  <li><a href="<?= base_url ('Home/Karyawan') ?>"><i class="fa fa-windows"></i> Karyawan </a></li>
                     <?php }?>
 
   <li><a><i class="fa fa-edit"></i> Transaksi <span class="fa fa-chevron-down"></span></a>
@@ -242,7 +242,7 @@
       ?>
       <li><a><i class="fa fa-user"></i> Users <span class="fa fa-chevron-down"></span></a>
         <ul class="nav child_menu">
-          <li><a href="<?= base_url('/home/user') ?>">user</a></li>
+          <li><a href="<?= base_url('/home/user') ?>">User</a></li>
           <li><a href="<?= base_url('/home/karyawan') ?>">Karyawan</a></li>
         </ul>
       </li>
@@ -262,22 +262,8 @@
 </div>
 <!-- /sidebar menu -->
 
- </menu footer buttons >
-<div class="sidebar-footer hidden-small"> 
-  <!-- <a data-toggle="tooltip" data-placement="top" title="Settings">
-    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-  </a>
-  <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-  </a>
-  <a data-toggle="tooltip" data-placement="top" title="Lock">
-    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-  </a> --> 
-  <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?= base_url('home/log_out') ?>">
-    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-  </a>
-</div>
 <!-- /menu footer buttons -->
+
 </div>
 </div>
 
